@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-intro-code';
+  fontColor = 'red';
+  message = "Welcome!"
+  showNameStatus = true;
+  names : string[] = ['Amit', 'Alex', 'Amrita', 'Sophia', 'Samira'];
+  toggleNames(){
+    this.showNameStatus = !this.showNameStatus;
+  }
 }
